@@ -19,4 +19,7 @@ vector_v = np.sin(vector_t)  # creating a vector v from the sign of vector t val
 
 line, = plot.plot(vector_t, vector_v)  # Plotting the vectors
 
+for i in range(tn):
+    print("({}, {})".format(vector_t[i], vector_v[i]))
+
 plot.show()
